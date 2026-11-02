@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button off & ON</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+        img{
+            background-color: black;
+            height: 300px;
+            width: 300px;
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="off.png" alt="" id="off">
+    <br>
+    <br>
+    <br>
+  
+     <button onclick="switchon()">switch On</button>
+    <button onclick="switchoff()">switch off</button>
+    <script>
+        function switchon(){
+            document.getElementById('off')
+            .src="on.jpg";
+        }
+
+        function switchoff(){
+            document.getElementById('off')
+            .src="off.png";
+        }
+
+
+    </script>
+</body>
+</html>
