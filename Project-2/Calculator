@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calculator">
+
+    <input type="number" name="name" id=" A" value="Enter the number">
+    
+    <selsect id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+    </selsect>
+    <input type="number" name="" id="B" value="enter the second number">
+    <button onclick="calculate()">calculate</button>
+    <div id="result"></div>
+    </div>
+    <script>
+        function calculate(){
+            var A=document.getElementById("A").Value
+             var B=document.getElementById("B").Value
+            
+
+        }
+            switch(operator) {
+         case  1:  document.writeln("a + b");
+         break;
+         case 2 : document.writeln("a - b");
+         break;
+         case 3 : document.writeln("a*b");
+         break;
+         case 4 : if(b==0) {
+          document.writeln("Invalid devision");
+         } else {
+           document.writeln("a/b");
+         }
+
+         break;
+         case 5 :  if(b == 0) {
+          document.writeln("Invalid devision");
+         } else{
+            document.writeln("a %  b");
+         }
+         
+         break;
+        default : (" Invalid Operator");
+           }
+    
+
+
+        
+
+    </script>
+</body>
+</html>
